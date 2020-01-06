@@ -15,25 +15,43 @@ color: rgba(0, 0, 0, 1);
 }
 
 div#interface  {
-
-   width: 1400px;
+   
+   max-width: 1400px;
    background: #ffffff;
    margin: 0px auto 0px auto;
-   box-shadow: 0px 0px 0px 0px;
+   box-shadow: 0px 0px 0px rgba(0, 0, 0, .5);
    padding: 0px 0px 0px 0px;
-
+   
 }
 
+div.titulos {
+   
+   width: 50%;
+   float: left;
+   
+}
+
+div.menubox{
+
+  position: relative;
+  width: 50%;
+  margin-right: 0px;
+  text-align: right;
+  float: right;
+   
+
+
+}
 p {
    text-align: justify; 
    text-indent: 50px;
+   
+}
 
- }
-
- header#cabeçalho img#icone  {
-
+header#cabeçalho img#icone  {
+   
    position: absolute;
-   left: 1500px;
+   left: 80%;
    top: 50px;
 
 
@@ -115,24 +133,28 @@ p {
 
 nav#menu {
 
-   display:ruby-base-container ;   
+   display:flex;
+   justify-content: flex-end;
+  
 
 }
 
- nav#menu ul {
 
+
+
+ nav#menu ul {
+   display: flex;
+   margin: 0px;
    list-style: none;
    text-transform: uppercase;
-   position: absolute;
-   top: -20px;
-   right: 350px;
+  
 
 }
 
 nav#menu li {
-   display: inline-flex;
+  
    background-color: #dddddd;
-   padding: 10px;
+   padding: 20px 10px 10px 10px;
    margin: 2px;
    transition: background-color 1s;
    -webkit-transition: background-color 1s;
