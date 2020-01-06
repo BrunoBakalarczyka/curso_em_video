@@ -18,7 +18,7 @@ div#interface  {
 
    width: 1400px;
    background: #ffffff;
-   margin: -20px auto 0px auto;
+   margin: 0px auto 0px auto;
    box-shadow: 0px 0px 0px 0px;
    padding: 0px 0px 0px 0px;
 
@@ -163,6 +163,49 @@ nav#menu a  {
 nav#menu a:hover  {
 
    color: #ffffff;
+
+}
+
+section#corpo {
+
+   display: block;
+   width: 785px;
+   float: left;
+   border-right: 1px solid #606060;
+   padding-right: 15px;
+   padding-left: 15px;
+  
+
+}
+
+
+
+aside#lateral {
+
+   display: block;
+   width: 550px;
+   float: right;
+   padding-right: 15px;
+   padding-left: 15px;
+   
+   
+   
+}
+
+
+
+
+footer#rodapé {
+   
+   clear: both;
+   border-top: 1px solid #606060; 
+
+
+}
+
+footer#rodapé p {
+
+   text-align: center;
 
 }
 
