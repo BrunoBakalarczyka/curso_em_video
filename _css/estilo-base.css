@@ -225,6 +225,40 @@ table#tabela td {
 
 }
 
+table#tabela td.ce  {
+
+   color: #ffffff;
+   background-color: #606060;
+   vertical-align: top;
+   font-weight: bold;
+   
+}
+
+
+table#tabela td.cd  {
+
+   background-color: #cecece;
+   vertical-align: top;
+   
+   
+}
+
+table#tabela caption  {
+
+   color: #888888;
+   font-size: 15pt;
+   font-weight: bolder;
+
+}
+
+table#tabela caption span {
+
+   display: block;
+   float: right;
+   color: #000000;
+   font-size: 8pt;
+
+}
 
 
 
