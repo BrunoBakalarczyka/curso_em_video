@@ -15,6 +15,7 @@
 
 body {
 
+font-family: Arial, sans-serif;
 background-color: #dddddd;
 color: rgba(0, 0, 0, 1);  
 
@@ -52,6 +53,20 @@ p {
    text-align: justify; 
    text-indent: 50px;
    
+}
+
+a {
+
+   color: #606060;
+   text-decoration: none;
+
+
+}
+
+a:hover {
+
+   text-decoration: underline;
+
 }
 
 header#cabeçalho img#icone  {
@@ -119,7 +134,7 @@ header#cabeçalho img#icone  {
     position : absolute;
     top: 0px;
     background-color: rgba(0, 0, 0, .4);
-    color: rgb(143, 189, 112);
+    color: yellow;
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -206,6 +221,48 @@ section#corpo {
 
 }
 
+article#artigo h2 {
+
+   font-size: 12pt;
+   color: #606060;
+   background-color: #dddddd;
+   padding: 5px 0px 5px 10px;
+   margin: 10px 0px 10px 0px;
+
+}
+
+header#cabeçalho-artigo h1 {
+
+   font-family: 'FonteLogo', sans-serif;
+   font-size: 20pt;
+   color: #606060;
+   margin-bottom: 0px;
+   margin-top: 0px;
+
+}
+
+.direita {
+
+   text-align: right;
+
+}
+
+header#cabeçalho-artigo h2 {
+
+   font-size: 13pt;
+   color: #cecece;
+   background-color: #ffffff;
+   margin-bottom: 0px;
+   
+}
+
+header#cabeçalho-artigo h3 {
+
+   font-size: 12pt;
+   color: #606060;
+   
+}
+
 table#tabela {
 
    border: 1px solid #606060;
@@ -257,6 +314,7 @@ table#tabela caption span {
    float: right;
    color: #000000;
    font-size: 8pt;
+   margin-top: 10px;
 
 }
 
@@ -269,12 +327,30 @@ aside#lateral {
    float: right;
    padding-right: 15px;
    padding-left: 15px;
-   
+   background-color: #dddddd;
+   margin-top: 10px;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
    
    
 }
 
+aside#lateral h1 {
 
+   font-family: 'FonteLogo', sans-serif;
+   font-size: 20pt;
+   color: #606060;
+   margin-top: 0px;
+
+}
+
+aside#lateral h2 {
+
+   background-color: #606060;
+   font-size: 15pt;
+   color: #ffffff;
+   padding: 5px;
+   
+}
 
 
 footer#rodapé {
