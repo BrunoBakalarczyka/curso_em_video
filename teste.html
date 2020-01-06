@@ -15,10 +15,35 @@
         
         <script >
         
-            alert ("olá Mundo!");
-            document.write("Olá Mundo! Hoje é dia : " +Date() );
+            //alert ("olá Mundo!");
+            //document.write("Olá Mundo! Hoje é dia : " +Date() );
+            function façasealuz() {
+
+                document.getElementById("luz").src ="_img/lampada-acesa.jpg";
+
+
+            }
+
+            function apagaluz ()  {
+                
+                document.getElementById("luz").src ="_img/lampada-apagada.jpg";
+
+            }
+
+            function quebraste ()  {
+
+                document.getElementById("luz").src = "_img/lampada-quebrada.jpg";
+
+            }
+
+
         
         </script>
+
+        <h1>Acenda a Lâmpada</h1>
+        <img src="_img/lampada-apagada.jpg" id="luz" onmousemove="façasealuz()"  onmouseout="apagaluz()"  onclick="quebraste()"/>
+
+        
 
     </body>
 
