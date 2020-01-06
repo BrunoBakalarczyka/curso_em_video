@@ -7,6 +7,12 @@
 
 }
 
+* {
+
+   box-sizing: border-box;
+
+}
+
 body {
 
 background-color: #dddddd;
@@ -191,7 +197,7 @@ nav#menu a:hover  {
 section#corpo {
 
    display: block;
-   width: 785px;
+   width: 60%;
    float: left;
    border-right: 1px solid #606060;
    padding-right: 15px;
@@ -225,7 +231,7 @@ table#tabela td {
 aside#lateral {
 
    display: block;
-   width: 550px;
+   width: 40%;
    float: right;
    padding-right: 15px;
    padding-left: 15px;
