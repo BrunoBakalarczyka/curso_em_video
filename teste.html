@@ -17,31 +17,44 @@
         
             //alert ("olá Mundo!");
             //document.write("Olá Mundo! Hoje é dia : " +Date() );
-            function façasealuz() {
+            var quebrada = false;
+            function mudaLampada(tipo) {
+                if (tipo == 1)  {
 
-                document.getElementById("luz").src ="_img/lampada-acesa.jpg";
+                    arquivo = "_img/lampada-acesa.jpg";
+                    
 
+                }
 
-            }
+                if (tipo == 2)  {
 
-            function apagaluz ()  {
+                    arquivo = "_img/lampada-apagada.jpg";
+                    
+                }
+
+                if (tipo == 3)  {
+
+                    arquivo = "_img/lampada-quebrada.jpg";
+                   
+
+                }     
+                if (!quebrada)  {
+                document.getElementById("luz").src = arquivo;
+                    if (tipo == 3) {
+                        
+                        quebrada = true;
+
+                    }
+                }
+
+            
                 
-                document.getElementById("luz").src ="_img/lampada-apagada.jpg";
 
             }
-
-            function quebraste ()  {
-
-                document.getElementById("luz").src = "_img/lampada-quebrada.jpg";
-
-            }
-
-
-        
         </script>
 
         <h1>Acenda a Lâmpada</h1>
-        <img src="_img/lampada-apagada.jpg" id="luz" onmousemove="façasealuz()"  onmouseout="apagaluz()"  onclick="quebraste()"/>
+        <img src="_img/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)"  onmouseout="mudaLampada(2)"  onclick="mudaLampada(3)"/>
 
         
 
