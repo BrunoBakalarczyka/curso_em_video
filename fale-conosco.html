@@ -70,7 +70,7 @@
 
             
             
-            <form>
+            <form method = "POST" id = "fContato" action = "mailto: brunobakalarczyk.oliveira@gmail.com">
 
                 <fieldset id = "usuario" >
                     <legend>Identificação do Usuário</legend>
@@ -84,30 +84,71 @@
                             <input type = "radio" name = "tSexo" id = "cNBi"/> <label for = "cNBi">Não-Binário</label>
                         </fieldset>
 
-                       <p> Data de Nascimento: <input type = "date" name = "tNasc" id = "cNasc"/> </p>
+                       <p> <label for = "cNasc">Data de Nascimento:</label> <input type = "date" name = "tNasc" id = "cNasc"/> </p>
 
                 </fieldset>
                 
                 <fieldset id = "endereco">
                     <legend >Endereço do Usuário</legend>
-                        <p>Logradouro: <input type = "text" name = "tEnd" id = "cEnd" size = "13" maxlength = "80" placeholder = "Rua, Av, Trav, ..." />  </p> 
-                        <p>Número: <input type = "number" name = "tNum" id = "cNum" min = "0" max = "99999"/> </p>
-                        Estado:
-                        Cidade:
+                        <p><label for = "cEnd">Logradouro:</label> <input type = "text" name = "tEnd" id = "cEnd" size = "13" maxlength = "80" placeholder = "Rua, Av, Trav, ..." />  </p> 
+                        <p><label for = "cNum">Número:</label> <input type = "number" name = "tNum" id = "cNum" min = "0" max = "99999"/> </p>
+                        <p><label for = "cEst">Estado:</label> <select name = "tEst" id = "cEst">
+
+                            <option>Acre (AC)</option>
+                            <option>Alagoas (AL)</option>
+                            <option>Amapá (AP)</option>
+                            <option>Amazonas (AM)</option>
+                            <option>Bahia (BA)</option>
+                            <option>Ceará (CE)</option>
+                            <option>Distrito Federal (DF)</option>
+                            <option>Espírito Santo (ES)</option>
+                            <option>Goiás (GO)</option>
+                            <option>Maranhão (MA)</option>
+                            <option>Mato Grosso (MT)</option>
+                            <option>Mato Grosso do Sul (MS)</option>
+                            <option>Minas Gerais (MG)</option>
+                            <option>Pará (PA)</option>
+                            <option>Paraíba (PB)</option>
+                            <option>Paraná (PR)</option>
+                            <option>Pernambuco (PE)</option>
+                            <option>Piauí (PI)</option>
+                            <option>Rio de Janeiro (RJ)</option>
+                            <option>Rio Grande do Norte (RN)</option>
+                            <option>Rio Grande do Sul (RS)</option>
+                            <option>Rondônia (RO)</option>
+                            <option>Roraima (RR)</option>
+                            <option>Santa Catarina (SC)</option>
+                            <option>São Paulo (SP)</option>
+                            <option>Sergipe (SE)</option>
+                            <option>Tocantins (TO)</option>
+
+
+                        </select> </p>
+                        <p><label for = "cCid">Cidade:</label> <input type = "text" name = "tCid" id = "cCid" maxlength= "40" size = "20" placeholder = "Sua Cidade" list = "cidades"/></p>
+                        <datalist id = "cidades" >
+
+                            <option value = "Porto Algre" ></option>
+                            <option value = "Florianópolis" ></option>
+                            <option value = "São Paulo" ></option>
+                            <option value = "Rio de Janeiro" ></option>
+
+
+                        </datalist>
+
                 </fieldset>
                 
                <fieldset id = "mensagem">
                     <legend >Mensagem do Usuário</legend>
-                        Grau de Urgência:
-                        Mensagem:
+                        <p><label for = "cUrg">Grau de Urgência:</label> MIN<input type = "range" name = "tUrg" id = "cUrg" min = "0" max = "10" step = "2"/>Max</p>
+                        <p><label for = "cMsg">Mensagem</label> <textarea name = "tMsg" id = "cMsg" cols = "45" rows = "5" placeholder = "Deixe aqui sua Mensagem"></textarea> </p>
                </fieldset>
                 
                 <fieldset id = "interesse">
                     <legend >Quero um Google Glass</legend>
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                        <p><label for = "cPEd">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                        <p><label for = "cCor">Cor:</label></p>
+                        <p><label for = "cQtd">Quantidade:</label></p>
+                        <p><label for = "cTot">Preço Total: R$</label></p>
                 </fieldset>
                 
                 
